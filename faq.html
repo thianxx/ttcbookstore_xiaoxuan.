@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - TTC BookStore</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Small internal style for the accordion behavior since it's specific to this page */
+        details.book-card summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        details.book-card summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.book-card summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        details.book-card[open] summary::after {
+            content: '-';
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><img src="image/ttclogo.png" alt="Picture of TTC BookStore Logo" height="120" width=""> TTC BookStore
+            </h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+
+                <li>
+                    <a href="books.html">Books</a>
+                    <ul class="submenu">
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="children.html">Children's Books</a></li>
+                        <li><a href="comics.html">Comics</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="explore.html">Explore</a>
+                    <ul class="submenu">
+                        <li><a href="bestsellers.html">Bestsellers</a></li>
+                        <li><a href="newarrivals.html">New Arrivals</a></li>
+                        <li><a href="recommendations.html">Recommendations</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="product.html">Product</a>
+                    <ul class="submenu">
+                        <li><a href="stationery.html">Stationery</a></li>
+                        <li><a href="gifts.html">Gifts and Merchandise</a></li>
+                        <li><a href="art.html">Art Supplies</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                    <ul class="submenu">
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="reservations.html">Book Reservations</a></li>
+                        <li><a href="studyroom.html">Study Room Booking</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                    <ul class="submenu">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about our bookstore, services, and policies.</p>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <details class="book-card" style="margin-bottom: 1rem; text-align: left; align-items: stretch;">
+                    <summary>What are your opening hours?</summary>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <p>We are open daily from 10:00 AM to 9:00 PM, including weekends and public holidays.</p>
+                    </div>
+                </details>
+
+                <details class="book-card" style="margin-bottom: 1rem; text-align: left; align-items: stretch;">
+                    <summary>Do you offer delivery services?</summary>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <p>Yes, we offer delivery services within <b>Malaysia</b> only. Free shipping is available for orders above RM50.</p>
+                    </div>
+                </details>
+
+                <details class="book-card" style="margin-bottom: 1rem; text-align: left; align-items: stretch;">
+                    <summary>Can I return or exchange a book?</summary>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <p>Returns and exchanges are accepted within 7 days of purchase with a valid receipt, provided
+                            the item is in its original condition.</p>
+                    </div>
+                </details>
+
+                <details class="book-card" style="margin-bottom: 1rem; text-align: left; align-items: stretch;">
+                    <summary>How can I become a member?</summary>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <p>You can sign up for our membership program in-store or online via the Services page. Members
+                            enjoy exclusive discounts and early access to sales.</p>
+                    </div>
+                </details>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 TTC BookStore. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

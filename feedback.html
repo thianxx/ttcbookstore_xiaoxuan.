@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - TTC BookStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><img src="image/ttclogo.png" alt="Picture of TTC BookStore Logo" height="120" width=""> TTC BookStore
+            </h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+
+                <li>
+                    <a href="books.html">Books</a>
+                    <ul class="submenu">
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="children.html">Children's Books</a></li>
+                        <li><a href="comics.html">Comics</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="explore.html">Explore</a>
+                    <ul class="submenu">
+                        <li><a href="bestsellers.html">Bestsellers</a></li>
+                        <li><a href="newarrivals.html">New Arrivals</a></li>
+                        <li><a href="recommendations.html">Recommendations</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="product.html">Product</a>
+                    <ul class="submenu">
+                        <li><a href="stationery.html">Stationery</a></li>
+                        <li><a href="gifts.html">Gifts and Merchandise</a></li>
+                        <li><a href="art.html">Art Supplies</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                    <ul class="submenu">
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="reservations.html">Book Reservations</a></li>
+                        <li><a href="studyroom.html">Study Room Booking</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                    <ul class="submenu">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>We Value Your Feedback</h2>
+            <p>Let us know about your experience or how we can improve.</p>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="book-card" style="align-items: stretch; text-align: left;">
+                    <form action="#" method="post">
+                        <div style="margin-bottom: 1rem;">
+                            <label for="name"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name"
+                                style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px;">
+                        </div>
+
+                        <div style="margin-bottom: 1rem;">
+                            <label for="email"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="Your Email"
+                                style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px;">
+                        </div>
+
+                        <div style="margin-bottom: 1rem;">
+                            <label for="subject"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Subject:</label>
+                            <select id="subject" name="subject"
+                                style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px;">
+                                <option value="general">General Inquiry</option>
+                                <option value="compliment">Compliment</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="suggestion">Suggestion</option>
+                            </select>
+                        </div>
+
+                        <div style="margin-bottom: 1rem;">
+                            <label for="message"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message:</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Write your message here..."
+                                style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px; font-family: inherit;"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            style="width: 100%; padding: 1rem; background: var(--primary-color); color: var(--white); border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Submit
+                            Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 TTC BookStore. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
